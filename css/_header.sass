@@ -1,9 +1,18 @@
 header
+ 
   .logo
     padding: 1.25em 0em 1.25em 0em
     a 
-      display: inline-block
-
+      display: flex
+      text-decoration: none
+      color: #000
+    p 
+      padding: 0.625em
+      text-align: left
+      font-family: $font-family2
+      font-size: 1.725em
+      max-width: 250px
+      line-height: 1.125em
   .social 
     text-align: right
     line-height: 5em
@@ -17,6 +26,10 @@ header
       background: navy
       color: #fff
       margin-left: 1em
+      &.facebook
+        background: #3b5998
+      &.twitter
+        background: #00abf0
   
   .menu 
     background: $primario
@@ -34,6 +47,6 @@ header
           display: inline-block
           padding: 1em 1.25em
           font-size: 0.87em
-          &hover
+          &:hover
             text-decoration: none
             background: $secundario

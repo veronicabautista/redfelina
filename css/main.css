@@ -23,7 +23,16 @@ a {
 header .logo {
   padding: 1.25em 0em 1.25em 0em; }
   header .logo a {
-    display: inline-block; }
+    display: flex;
+    text-decoration: none;
+    color: #000; }
+  header .logo p {
+    padding: 0.625em;
+    text-align: left;
+    font-family: "Baloo Chettan", cursive;
+    font-size: 1.725em;
+    max-width: 250px;
+    line-height: 1.125em; }
 header .social {
   text-align: right;
   line-height: 5em; }
@@ -37,6 +46,10 @@ header .social {
     background: navy;
     color: #fff;
     margin-left: 1em; }
+    header .social a.facebook {
+      background: #3b5998; }
+    header .social a.twitter {
+      background: #00abf0; }
 header .menu {
   background: #5f6ad4;
   margin-bottom: 1.25em; }
@@ -53,10 +66,14 @@ header .menu {
         display: inline-block;
         padding: 1em 1.25em;
         font-size: 0.87em; }
-        header .menu ul li ahover, header .menu ul li a:activehover, header .menu ul li a:visitedhover {
+        header .menu ul li a:hover, header .menu ul li a:active:hover, header .menu ul li a:visited:hover {
           text-decoration: none;
           background: #7780da; }
 
+.main .titulos_seccion,
+.sidebar .titulos_seccion {
+  font-family: "Baloo Chettan", cursive;
+  border-bottom: 2px solid #8ebec1; }
 .main .titulo_seccion h3,
 .sidebar .titulo_seccion h3 {
   font-family: "Baloo Chettan", cursive;
@@ -65,9 +82,11 @@ header .menu {
   font-weight: normal;
   color: #3b3b3b;
   padding-bottom: 0.62em;
-  border-bottom: 4px solid #48b04d;
+  border-bottom: 4px solid #8ebec1;
   margin-bottom: 1.25em; }
 
+.main .titulos_seccion {
+  font-family: "Baloo Chettan", cursive; }
 .main .titulo_seccion > div {
   padding: 0; }
 .main .posts .post {
@@ -114,5 +133,122 @@ header .menu {
         .main .posts .post .contenedor .info .categorias a:hover {
           color: #5f6ad4;
           text-decoration: none; }
+.main .single-post .categorias {
+  margin-bottom: 1.875em; }
+.main .paginacion > div {
+  padding: 0; }
+  .main .paginacion > div ul {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 1.25em;
+    font-size: 1em; }
+    .main .paginacion > div ul li {
+      float: left;
+      background: #3b3b3b;
+      color: #fff;
+      margin-right: 0.62em;
+      font-size: 1.125em;
+      line-height: 1.125em; }
+      .main .paginacion > div ul li.disabled {
+        padding: 0.62em 0.937em;
+        font-size: 1.125em;
+        line-height: 1.125em; }
+      .main .paginacion > div ul li a {
+        background: #5f6ad4;
+        color: #fff;
+        line-height: 1.125em;
+        display: inline-block;
+        padding: 0.62em 0.937em; }
+        .main .paginacion > div ul li a:hover {
+          background: #7780da;
+          text-decoration: none; }
+.main .paginacion .wp-pagenavi {
+  margin-bottom: 1.25em; }
+  .main .paginacion .wp-pagenavi .pages,
+  .main .paginacion .wp-pagenavi span {
+    background: #3b3b3b;
+    color: #fff;
+    margin-right: 0.62em;
+    font-size: 1.125em;
+    line-height: 1.125em;
+    padding: 0.62em 0.937em; }
+  .main .paginacion .wp-pagenavi a {
+    background: #5f6ad4;
+    color: #fff;
+    font-size: 1.125em;
+    display: inline-block;
+    padding: 0.62em 0.937em;
+    margin-right: 0.62em; }
+    .main .paginacion .wp-pagenavi a:hover {
+      background: #7780da;
+      text-decoration: none; }
+
+.sidebar .widget {
+  margin-bottom: 2.5em; }
+  .sidebar .widget.redes-sociales {
+    overflow: hidden; }
+    .sidebar .widget.redes-sociales a {
+      float: left;
+      width: 30%;
+      padding: 1em;
+      text-align: center;
+      background: #000;
+      color: #fff;
+      display: inline-block;
+      margin: 1em; }
+      .sidebar .widget.redes-sociales a:hover {
+        text-decoration: none; }
+      .sidebar .widget.redes-sociales a.facebook {
+        background: #3b5998; }
+      .sidebar .widget.redes-sociales a.twitter {
+        background: #00abf0; }
+      .sidebar .widget.redes-sociales a .icono {
+        width: 100%;
+        font-size: 1.875em; }
+  .sidebar .widget.boletin .formulario {
+    background: #0e2b37;
+    text-align: center;
+    padding: 1.25em; }
+    .sidebar .widget.boletin .formulario label {
+      color: #ffffff;
+      margin-bottom: 1.125em;
+      display: block;
+      font-weight: normal; }
+    .sidebar .widget.boletin .formulario input[type="email"] {
+      color: #3b3b3b;
+      text-align: center;
+      padding: 0.625em;
+      font-size: 1.125em;
+      border-radius: 3px;
+      width: 100%;
+      border: none;
+      margin-bottom: 1.25em; }
+    .sidebar .widget.boletin .formulario input[type="submit"] {
+      background: #8ebec1;
+      border-radius: 3px;
+      padding: 0.625em 1.875em;
+      border: none;
+      color: #ffffff; }
+  .sidebar .widget .contenedor-ad {
+    text-align: center; }
+    .sidebar .widget .contenedor-ad a {
+      display: inline-block; }
+.sidebar .ad img {
+  height: 300px; }
+
+footer {
+  background: #5f6ad4;
+  margin-top: 1em;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.625em; }
+  footer a {
+    color: #000; }
+  footer .copyright p {
+    font-size: 0.87em; }
+
+@media screen and (max-width: 768px) {
+  header .logo {
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

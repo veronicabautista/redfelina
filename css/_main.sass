@@ -1,5 +1,8 @@
 .main,
 .sidebar
+  .titulos_seccion
+    font-family: $font-family2
+    border-bottom: 2px solid $verde
   .titulo_seccion
     h3
       font-family: $font-family2
@@ -12,6 +15,8 @@
       margin-bottom: 1.25em
 
 .main,
+  .titulos_seccion
+    font-family: $font-family2
   .titulo_seccion
     > div
       padding: 0
@@ -62,3 +67,57 @@
               &:hover
                 color: $primario
                 text-decoration: none
+  .single-post
+    .categorias
+      margin-bottom: 1.875em
+  .paginacion
+    > div
+      padding: 0
+      ul
+        list-style: none
+        overflow: hidden
+        margin-bottom: 1.25em
+        font-size: 1em
+        li
+          float: left
+          background: $gris_oscuro
+          color: #fff
+          margin-right: 0.62em
+          font-size: 1.125em
+          line-height: 1.125em
+          &.disabled
+            padding: 0.62em 0.937em
+            font-size: 1.125em
+            line-height: 1.125em
+          a 
+            background: $primario
+            color: #fff
+            line-height: 1.125em
+            display: inline-block
+            padding: 0.62em 0.937em
+            &:hover
+              background: $secundario
+              text-decoration: none
+    .wp-pagenavi
+      margin-bottom: 1.25em
+      .pages,
+      span
+        background: $gris_oscuro
+        color: #fff
+        margin-right: 0.62em
+        font-size: 1.125em
+        line-height: 1.125em
+        padding: 0.62em 0.937em
+      a
+        background: $primario
+        color: #fff
+        font-size: 1.125em
+        display: inline-block
+        padding: 0.62em 0.937em
+        margin-right: 0.62em
+        &:hover
+          background: $secundario
+          text-decoration: none
+
+
+
